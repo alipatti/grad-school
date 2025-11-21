@@ -1,0 +1,89 @@
+\documentclass{grad-statement}
+
+\usepackage{ali-macros}
+\usepackage{ali-todo}
+
+\newcommand{\field}{Economics\xspace}
+\newcommand{\program}{Harvard\xspace}
+
+\begin{document}
+
+\section{Personal Background}
+
+% Growing up, my house was full of books. They were everywhere---stacked precariously on coffee tables and always threatening to topple if my Nerf gun battles became too rambunctious.
+% Given my parents' careers as journalists, this decor was unsurprising;
+% writing was the way they engaged with the world.
+
+Growing up, I attended a public high school where 75 percent of the student body recieved federal free or reduced price lunch and less than 20 percent met the state standard for math proficiency.
+%
+At the same time, I participated in an accelerated math program at the University of Minnesota that, throughout high school, covered the core sequence of a typical undergraduate math degree.
+The excellence of this program stood in sharp contrast to my in-school education and left me with the belief that math, and nothing else, approached the world with sufficient precision.
+
+I entered college thinking I would be a mathematician, but after taking several upper-level classes, slowly became disillusioned with the prospect of spending my life proving theorems whose significance could only be understood by a handful of people in my narrow subfield.
+Conversely, the social sciences grappled with issues that I found fascinating, but the methods taught in introductory classes left me unconvinced.\note{of what?}
+% I was faced with a conundrum:
+% Fields that I thought were rigorous studied problems I didn't care about.
+% Those who worked on problems I cared about lacked sufficient rigor.
+In the years since, I've gradually realized that the choice between rigor and XXX is a false dichotomy:
+%
+A Ph.D. in \field provides a framework to study the pressing social questions that interest me with the rigor and precision that originally drew me to math and computer science.
+I outline a research agenda in my statement of purpose.
+
+I also hope to contribute to the broader environment at \program in several ways.
+
+\section{Leadership, Inclusion, and Team Building}
+
+As a kid, I was a part of several communities in which I felt completely at home.
+At the time, those environments felt unforced and organic, but I’ve since realized that the strong sense of community and buy-in to group goals that I experienced didn’t occur spontaneously:
+they were products of explicit leadership that I’ve tried to replicate as I’ve gotten older.
+My role as the captain of Carleton's varsity track team is one example---a position I was elected to despite being far from the fastest on the track.
+% TODO: either transition into this somehow or cut it
+% At team dinners after practice, I ensured everyone had space at the table by explicitly asking the quiet people what they did in practice that day or what classes they’re taking.
+% These little gestures were so important to me as a shy, impressionable freshman.
+% Now, I try to pass it on.
+
+Humor was a main tool I used.
+I organized fun team traditions like ``room tours'' (a circuit of team members' dorms during which everyone was required to wear a ridiculous hat%
+% \footnote{My personal favorites include a XX and an Abe-Lincoln-esque top hat.}
+) and ``poemajj'' (a pre-meet open mic where we parodied songs to address important issues like beating our crosstown rivals).\note{link this to inclusion? distance + sprint unification}
+Even things as small as cracking a joke while waiting in the rain can completely pivot a miserable situation into one that builds group identity.
+This leadership style produces an environment where people feel at home, have permission to make mistakes, and give their all simply because they care about their teammates and the group’s success.
+This sense of camaraderie will stick around long after I’ve left.
+
+It also produces tangible results.
+% My junior year, my teammates and I delivered a 1-3-4 finish in the conference 800-meter championship (a first in program history).
+My senior year, I led the mid-distance team to a conference 4x800m relay win for the first time in nearly a decade.
+As a TA, I was told by several students that they come only to my office hours because they find my teaching style more effective than other course staff.
+When I led a wilderness canoe trip at a summer camp I worked at over one summer in college, I later found out that a particularly anxious and homesick camper returned the following year explicitly because of me.
+
+% Any area I decide to pursue will benefit from these leadership and community-building skills. 
+In modern acadeimc research, people work in groups.
+I know how to make groups work.
+
+\section{Teaching}
+
+At Carleton, I was course staff for eight of my eleven terms on campus.
+I appreciated the excuse to revisit and master course material, but more importantly, I loved sharing my excitement with younger students and encouraging those who had previously been dissuaded from math and computer science by their reputation as overly technical and disconnected from reality.
+%
+In my current job, I have continued this interest by helping spearhead the development of training materials and leading several Python and Git crash courses to help our new hires learn the coding skills necessary for modern empirical economics research.
+
+Throughout my life, I've valued having role models and teachers whose infectious enthusiasm makes me excited about what I'm doing.
+I hope to provide this same mentorship to the next generation of students during graduate school and throughout my career as a professor of \field.
+
+\section{Software}
+
+In my work at OI, I've often been frustrated by how programming languages that provide easy-to-use and feature-complete statistical models like Stata and R are excruciatingly slow on large datasets and lack the necessary language features for ergonomic development of complex codebases.
+Tools that scale well in terms of both code complexity and data size, like Python and its excellent Polars data frame library, lack good statistical modeling software.
+Switching between languages creates an annoying friction point.
+
+Over the past year, I've worked to fill this gap by writing a statistical library for Polars that allows users to flexibly specify and fit models without handing off to another tool.
+I've currently implemented a variety of models including OLS and generalized linear models while allowing for sample weights, multivariate normal priors on parameters, and several common sandwich covariance matrix estimators.
+I have a long wish list of features that I am slowly incorporating: random effects, smoothing splines, HAC covariance estimators, and the ability to absorb high-dimensional fixed effects, to name a few.
+%
+% I have learned so much working on this project.
+% Implementing models in a low-level language has forced me to relearn likelihood theory, numerical linear algebra, and optimization at a level far beyond what I got from reading a textbook.
+% On top of the technical implementation, I've been forced to think seriously about designing an API that makes simple things easy and obvious to new users while still giving them the option to lift up the hood if their use case requires it.
+I plan to continue developing this library throughout graduate school and hope that it soon removes many of the headaches that come with writing and maintaining the codebase of a complicated research project.
+\note{reference other software?}
+
+\end{document}
