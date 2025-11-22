@@ -1,0 +1,120 @@
+\documentclass{grfp}
+
+\begin{document}
+
+% instructions:
+% https://www.research.gov/research-web/content/grfpappinst
+
+\noindent
+Growing up, my house was full of books. They were everywhere---stacked precariously on coffee tables and always threatening to topple if my Nerf gun battles became too rambunctious.
+Given my parents' careers as journalists, this decor was unsurprising;
+writing was the way they engaged with the world.
+In my early childhood, I followed suit and read voraciously.
+
+Over time, my faith in words began to waver.
+In eighth grade, I tested into a math program at the University of Minnesota that, throughout high school, covered the core sequence of a typical undergraduate math degree.
+I became hooked, and the excellence of this experience coupled with a less inspiring humanities and social science education from my public high school left me with the belief that only math and the hard sciences approached the world with sufficient precision.
+% Anything that could not be proven was not worth thinking about.
+I entered college thinking I would be a mathematician.
+
+My freshman fall, I took a class on real analysis.
+At first, I relished the challenge of upper-level math.
+But over subsequent classes, I became increasingly disillusioned with the prospect of spending my life writing proofs whose relevance could only be understood by people who had dedicated their entire lives to mathematics.
+Analytic continuation was beautiful, but what was the end goal?
+Conversely, the social sciences grappled with issues that I found fascinating, but the methods taught in introductory classes left me unconvinced.
+I was faced with a conundrum:
+Fields that I found rigorous worked on problems that I didn't care about.
+Those who worked on problems I cared about lacked sufficient rigor.
+Gradually, I realized that this was a false dichotomy.
+
+Across topics and disciplines, the unifying thread throughout my past experience has been a desire to attack pressing real-world problems with the logical rigor that originally drew me to math, and a Ph.D. in economics provides a framework in which to continue this pursuit.
+During and after graduate school, I plan to pursue policy-relevant research---particularly on education, rural decline, and political polarization.
+I elaborate on one such idea in my research proposal, and my strong mathematical and computational background makes me well-suited to execute this agenda.
+
+\section{Intellectual Merit}
+
+My first glimpse into the practical utility of math came during a cryptography class I took in my sophomore summer abroad at the University of Cambridge.
+I was fresh off my first algebra course and was amazed to discover that finite fields---previously a neat classroom example---were used extensively in the construction of solutions to impossible-sounding problems in the real world.
+Immediately upon returning to the U.S., I spent a semester working with Professor Nicholas Hopper and his cryptography group at the University of Minnesota helping to develop a method for users to report encrypted messages to a moderator while still providing provable privacy guarantees.
+
+Previous research had struck a balance between accountability and privacy by attaching a small token to each message that allowed a moderator to pinpoint its sender if a message was reported by its recipient.
+% No security was lost if the message was not reported, and the report provided no information to anyone who was not the moderator.
+That fall, I devised a way to democratize this process by requiring consensus among a panel of moderators before the sender's identity was revealed. Without consensus, privacy was provably preserved.
+I presented this as preliminary work at one of the field's top conferences.
+%
+The following summer, I returned to the lab and strengthened my construction by having senders maintain anonymity until their messages were reported many times or by many different people.
+% My cryptographic construct known as a zero-knowledge proof---essentially an argument that is utterly convincing yet reveals none of its reasoning.
+% Underlying these objects is a beautiful theory of algebra over elliptic curve groups, and by building upon such a solid mathematical foundation, I was able to prove things that translated into practical and useful guarantees about the product's performance.
+I am preparing a manuscript on these results and hope to submit it for publication soon.
+
+This experience introduced me to the frustration and elation of the scientific research process.
+After spending the first half of my summer spinning my wheels and chasing dead ends, I developed a hunch that a modification to one of my failed approaches could be used to solve a different problem that we had not previously considered.
+With Professor Hopper's gracious encouragement, I spent weeks scouring the literature and teaching myself the necessary background to implement my new plan.
+I remind myself of this summer whenever I'm hopelessly stuck on a problem with no clear path in sight: Is there a new angle from which I can attack the issue?
+
+Back at Carleton, I continued to discover other exciting applications of mathematics.
+After taking several algorithms classes with Professor David Liben-Nowell, I joined one of his projects studying a novel algorithms problem inspired by clustering survey responses.
+I individually contributed the paper's main technical result: a proof that a naive but very efficient greedy algorithm produces a solution that is at least half as good as the optimal one.
+This manuscript is currently under review for publication.
+
+I also served as a research assistant with the LIGO Scientific Collaboration (an international research group in astrophysics) on a project searching for gravitational waves emitted by spinning neutron stars.
+Due to their slight asymmetry, theory predicts that the stars' rotation should emit regularly-spaced ripples in spacetime that appear as faint peaks in the signal's Fourier transform.
+I worked on building a database to find these peaks.
+
+During my senior year, I wrote two theses: an expository piece in which I reproved a few seminal results from algebraic number theory (for my math major) and an exploratory paper where I modeled sports games as sequences of discrete events to which I then applied deep-learning techniques originally developed for natural language processing (for my statistics major).
+I graduated \textit{summa cum laude}, having taken nearly every upper-level math and computer science class offered during my time at Carleton. 
+
+These experiences were intellectually fascinating and invaluable in their development of my technical skills, persistence, and teamwork, but none provided the connection to pressing societal problems that I had been looking for. 
+So, searching for more relevance, I accepted a predoctoral fellowship at Opportunity Insights (OI)---an economics research group at Harvard that conducts rigorous scientific research on social issues and whose work I have been following since high school.
+For the past two years, I've had the privilege of working as a research assistant there alongside Professors Raj Chetty and John Friedman.
+
+At OI, I have been primarily involved with a project studying changes in American life expectancy over the last several decades and how and why those changes have been distributed geographically and across the income distribution.
+We find that while overall mortality has significantly improved over the past two decades, nearly all of that improvement has been concentrated at the upper end of the income distribution.
+Poor people, especially those in rural areas, have seen little improvement.
+In some cases, there have even been declines.
+% These trends appear to be driven mostly by environmental factors rather than by a breakdown of the healthcare system.
+
+One of my major contributions to this project has been the authorship of a pipeline to produce local estimates of life expectancy by income, geography, and other demographic characteristics using administrative microdata from the IRS, Census Bureau, and Social Security Administration.
+While conceptually straightforward, this process has been plagued by statistical and computational challenges that arise when simultaneously estimating millions of parameters.
+For example, how do you reliably estimate life expectancy in a population with only ten deaths?
+How do you feasibly bootstrap standard errors for millions of estimates when a closed-form variance expression does not exist?
+My solutions to these problems have made me realize that code---often seen by applied economists as an unavoidable but ultimately inconsequential nuisance---is in fact integral to the research process.
+For example, my rewriting of part of our codebase improved processing speeds by orders of magnitude and shortened the research loop from several days to under an hour.
+
+My immersion in the research environment at Opportunity Insights has helped me realize that I would like to pursue a career in economics.
+Working on this health project has provided the perfect blend of rigor, theory, tricky technical problems, and relevance to pressing policy issues that I have been searching for during the last five years.
+I'm excited to begin my Ph.D. % with the ultimate goal of becoming a professor of economics.
+
+\section{Broader Impacts}
+
+At OI, I've admired how the lab leadership prioritizes not only producing influential research but getting our findings into the hands of those best suited to act on them.
+For example, we plan to make a public-facing dashboard with the local-area life expectancy results that I have produced.
+I plan to follow a similar model in my own research by producing clear non-technical summaries and public data dashboards, which I am equipped to create through my experience taking and twice serving as TA for an upper-level data visualization class at Carleton.
+Outside my research, I also plan to advance economics as a field through my software, teaching, and mentorship.
+
+During my work at OI, I have often been frustrated by how programming languages that provide easy-to-use and feature-complete statistical models like Stata and R are excruciatingly slow on large datasets and lack the necessary language features for ergonomic development of complex codebases.
+Tools that scale well in terms of both code complexity and data size, like Python and its excellent Polars data frame library, lack good statistical modeling software.
+Switching between languages creates an annoying friction point.
+
+Over the past year, I have been working to fill this gap by writing a statistical library that integrates tightly with Polars and allows users to flexibly specify and fit models without handing off to another tool.
+I've currently implemented a variety of models including OLS and generalized linear models while allowing for sample weights, multivariate normal priors on parameters, and several common sandwich covariance matrix estimators.
+I have a long wish list of features that I am slowly incorporating: random effects, smoothing splines, HAC covariance estimators, and the ability to absorb high-dimensional fixed effects, to name a few.
+
+I have learned so much working on this project.
+Implementing models in a low-level language has forced me to relearn likelihood theory, numerical linear algebra, and optimization at a level far beyond what I got from reading a textbook.
+On top of the technical implementation, I've been forced to think seriously about designing an API that makes simple things easy and obvious to new users while still giving them the option to lift up the hood if their use case requires it.
+I plan to continue developing this library throughout graduate school and hope that it soon removes many of the headaches that come with writing and maintaining the codebase of a complicated research project.
+
+The second piece of my broader impacts---and a major motivation for my pursuit of a Ph.D.---is the opportunity for teaching and mentorship.
+At Carleton, I was course staff for eight of my eleven terms on campus, including for classes on analysis, algebra, data visualization, and algorithms.
+I loved sharing my excitement with younger students and encouraging those who had previously been dissuaded from math and computer science by their reputation as overly technical and disconnected from reality.
+Outside the classroom, I also served as the captain of Carleton's varsity track and field team---a position I was elected to despite being far from the fastest runner on the track.
+As captain, I worked hard to bring in new members and create a close-knit team family by organizing social events outside of practice that brought together the typically separated sprint, distance, and field event groups.
+
+At Opportunity Insights, I have continued this interest in teaching by helping to spearhead the development of training materials for our new hires to learn the coding skills necessary for modern empirical economics research.
+I've independently led several crash courses on programming for economics and make my software and math skills available as a resource for my colleagues in their work.
+%
+Throughout my life, I've valued having older teammates and teachers to provide perspective and whose infectious enthusiasm makes me excited about what I'm doing.
+I hope to provide this same mentorship to the next generation of students during graduate school and throughout my career as a professor of economics.
+
+\end{document}
