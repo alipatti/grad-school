@@ -1,6 +1,10 @@
 \documentclass{grfp}
 
+\usepackage{amsmath, amsfonts}
+
 \addbibresource{refs.bib}
+
+\newcommand\set[1]{\left\{ #1 \right\}}
 
 \begin{document}
 
@@ -86,7 +90,7 @@ Of interest are the parameters $\set{\mu_{zt}}$: the causal effects of spending 
 %
 For OLS to recover $\set{\mu_{zt}}$, we require (1) the well-validated assumption that age at move is orthogonal to unobserved family inputs and (2) that there is no dynamic selection into particular origin-destination pairs. In other words, we require that variation not absorbed by the push and pull factors $\pi_{om}$ and $\rho_{dm}$ is idiosyncratic.
 % We can test this assumption by XXXX.
-For identifiability, we also impose a yearly sum-to-zero constraint $\mathbb E(\mu_{zt} \given t) = 0 \; \forall \; t$.
+For identifiability, we also impose a yearly sum-to-zero constraint $\mathbb E(\mu_{zt} \ | \ t) = 0 \; \forall \; t$.
 %
 Setting $\Delta y_{zh} = \mu_{zh} - \mu_{z,2000}$ (the change in the causal effect of each CZ) and estimating \autoref{eq:first-diffs} answers our second research question.
 % For clarity, I have presented this as two separate regressions, but it could be combined into a single estimation to improve precision.
