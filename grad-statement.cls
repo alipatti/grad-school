@@ -3,12 +3,11 @@
 
 \LoadClass[11pt]{article}
 
-\RequirePackage{parskip}
+% \RequirePackage{parskip}
 
 \RequirePackage{geometry}
 \geometry{letterpaper}
 \geometry{margin=1in}
-\pagenumbering{gobble} % no page numbers
 % \linespread{1.0} % single-spaced
 
 % decrease spacing around math
@@ -65,3 +64,12 @@
 \setcounter{secnumdepth}{0} % no numbers
 
 \RequirePackage{xspace}
+
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\makeatletter
+\rhead{\textsc{\@author\ \thepage}}
+\lhead{\textsc{\@title}}
+\makeatother
