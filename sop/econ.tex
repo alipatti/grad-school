@@ -1,7 +1,6 @@
 \documentclass{grad-statement}
 
 \addbibresource{refs.bib}
-% \addbibresource{../refs.bib}
 
 \usepackage{ali-todo}
 \usepackage{amsmath, amsfonts}
@@ -11,13 +10,18 @@
 \newcommand\school{Harvard\xspace}
 \newcommand\program{Economics\xspace}
 
+\usepackage{setspace}
+
 \author{Pattison}
 \title{Statement of Purpose}
 
 \begin{document}
 
+% \doublespacing
+
 \noindent
 I am applying to \school \program in pursuit of becoming an academic economist conducting policy-relevant research in applied microeconimcs and political economics.
+I aim to study ... \XX
 
 \section{Background and Prior Research}
 
@@ -26,83 +30,93 @@ While there, I worked with Professor Nicholas Hopper at the Universtiy of Minnes
 My junior spring, I presented preliminary work at one of the field's top conferences.
 I'm currently working on a manuscript for these and other results.
 
-Also at Carleton, I served as a computational research assistant for the LIGO Scientific Collaboration\note{explain what this is or don't mention} and did theoretical computer science research with Professor David Liben-Nowell.
-My senior year, I wrote two undergraduate theses: an expository piece in which I reproved a few seminal results from algebraic number theory (for my math major) and a paper where I modeled sports games as sequences of discrete events to which I then applied deep-learning techniques originally developed for natural language processing (for my statistics major).
+At Carleton, I also served as a computational research assistant for an international physics research group, did theoretical computer science research with Professor David Liben-Nowell, and wrote two undergraduate senior theses.
+For my math major, I developed and reproved Dirichlet's unit theorem---a seminal result in algebraic number theory.
+For my statistics major, I modeled sports games as sequences of discrete events to which I then applied deep-learning techniques originally developed for natural language processing.
 
-My senior year, I developed an interest in economics and accepted a position as a Predoctoral Fellow at Opportunity Insights working under Professors Raj Chetty and John Friedman.
-Since graduating, I've worked there coauthoring a paper exploring racial, socioeconomic, and geographic disparities in life expectancy.
+My senior year, I developed an interest in economics after I took an upper-level price-theory class and was impressed by its ability to describe situations I had though were unnameable to rigorous quantitative study.
+Since graduating, I've worked as a Predoctoral Fellow at Opportunity Insights coauthoring a paper exploring racial, socioeconomic, and geographic disparities in life expectancy in the U.S.
+
+% \inlinetodo{should probably say more here about my work at OI but not really sure what. any ideas?}
 
 \section{Research Interests}
 
-I am particularly interested in questions about rural decline and the increasing ideological polarization of the American public.
-My writing sample outlines one potential avenue of research.
-Below I describe another investigating the impact of rising import competition from China on the long-term outcomes of children raised in affected areas.\note{what do i mean by affected areas?}
-It is well-known that this import exposure had long-term negative effects for adults, but recent work by \textcite{autor-etal-2025-places-people} explicitly notes the intergenerational effect as an open question.\footnote{%
+My experience growing up in an inner-city public school system and my more recent work at Opportunity Insights have made me particularly interested in issues of opportunity and spatial inequality.
+% Why, and to what degree, do some children have better life outcomes than others?\note{better grounding sentence}
+I hope to continue studying this in graduate school.
+
+In particular, I propose to investigate the effect of import competition from China in the early 21st century on the outcomes of children raised in places that bore the cost of globalization.
+It is well-known that this import competition had long-term negative effects on adults, but 
+% recent work by \textcite{autor-etal-2025-places-people} explicitly notes
+the intergenerational effect as an open question.\footnote{%
 	``And what are the consequences [for] children who are raised in trade-exposed places?
 	More work is needed to understand the long-term and intergenerational consequences of trade adjustment.'' -- \textcite[p. 75]{autor-etal-2025-places-people}}
+Are children raised in manufacturing towns worse off than they were 30 years ago?%
+% \footnote{
+% 	I will use IRS and Census microdata for this project, which I have worked extensively with in my time at OI.
+% }
 
-A separate line of existing research demonstrates that adults' incomes depend causally on where they lived as children and that these causal effects vary greatly across different parts of the country.
-More recently, \textcite{chetty-etal-2024-race-trends} show that these causal ``place effects'' themselves change across cohorts and that the changes closely track changes in local parental employment rates.
-This suggests a link between local labor market conditions and intergenerational mobility, but the direction of causality remains unclear.
+A separate line of research has demonstrated that social mobility---as measured by the expected adult earnings of a child whose parents earn at the 25th percentile of the income distribution---has degraded most in places where parental employment rates have also fallen \parencite{chetty-etal-2024-race-trends}, but the direction of causality remains unclear.
 Do declining labor markets worsen children's outcomes, or are both symptoms of deeper social decay?
-\note{do I need this paragraph?}
-%
-% My proposed research would mary these two disparate literatures.\note{strengthen this sentence}
 
-% using individual-level IRS and U.S. Census microdata, which I have extensive experience with from my work at Opportunity Insights.
-
-My ideal experiment would first randomly expose some places to foreign import competition (causing factory closures or mass layoffs) and then randomly assign children to grow up in exposed or unexposed areas.
-The difference in their adult outcomes would reveal the causal effect of import competition on children's prospects.\note{include ideal experiment?}
+To answer these questions, my ideal experiment would first randomly expose some places to foreign import competition (causing factory closures or mass layoffs) and then randomly assign children to grow up in exposed or unexposed areas.
+The difference in their adult outcomes would reveal the causal effect of import competition on children's prospects.
 %
-To approximate random import exposure, I use the classic ``China Shock'' instrument \parencite[for example]{autor-etal-2025-places-people} to isolate an exogenous component of exposure in the decade following China's 2001 admission to the World Trade Organization.
+To approximate random import exposure, I will use the classic ``China Shock'' instrument \parencite[for example]{autor-etal-2025-places-people}. % to isolate an exogenous component of import exposure in the decade following China's 2001 admission to the World Trade Organization.
 Intuitively, places where employment was concentrated in sectors that saw large Chinese supply increases (like textiles) were more affected than those where employment was concentrated in unexposed industries (like food processing).
 
-This instrument is sufficient to determine the cross-sectional effect on children growing up in exposed areas, however, it suffers from dynamic residential selection:
-higher-potential families may more readily depart an area when jobs disappear.
-For example, families in 1995 Cleveland are likely unobservably different from those there in 2005.
-
-% \inlinetodo{worth including selection on observables?}
+However, this alone is insufficient: If high-potential families leave an area when work disappears, then cross-sectional estimates of the China Shock's effect on the outcomes of children raised in exposed areas will be negatively biased.
 %
-% To see the extent to which  projecting off variation in children's adult income due to observable characteristics like parental education and pre-period parental wages.
+To purge this residential selection, I take inspiration from \textcite{chetty-etal-2024-race-trends} and leverage variation in the timing and destinations of moves to separate compositional shifts from changes in a places' causal effect.
 
-To purge this residential selection, I take inspiration from \textcite{chetty-etal-2024-race-trends} and leverage quasi-experimental variation in the timing and destinations of moves to separate compositional changes from shifts in places' causal effects.
-%
+My goal is to identify time-varying causal effects of childhood commuting zones on children's adult outcomes which I can then use in an event study or a first-differences regression.%
+\footnote{
+	For power, I could also incorporate the event study into \autoref{eq:movers} to estimate everything in a single step.
+}
 To illustrate my identification, consider two children born to similar families in Cleveland in 1985, one of whom moves to Minneapolis in 2000 and the other in 2001.
 Then, the difference in their mean outcomes is due to both the causal effect of spending 2000 in Minneapolis rather than Cleveland \emph{and} the fact that families moving in different years may be differentially selected.
-I model this selection as stemming from time-varying push and pull factors and package all such comparisons into the following regression estimated on all one-time movers:
+To purge this selection into moving, I include yearly ``push'' and ``pull'' factors that allow for time-varying selection into both the choice to move and the choice of destination.
+I package all such comparisons into the following regression estimated on all one-time movers:
 \begin{equation}
 	\label{eq:movers}
 	y_i =
-	\alpha_{od}
+	\alpha_{o(i),d(i)}
 	% + \underbrace{\pi_{om} + \rho_{dm}}_{\substack{\text{push and pull} \\ \text{factors}}}
-	+ \pi_{om} + \rho_{dm}
-	+ \sum_{t = c}^{c + 22} \mu_{z(i, t), t}
+	+ \pi_{o(i),m(i)} + \rho_{d(i),m(i)}
+	% + \sum_{t = c}^{c + 22} \mu_{z(i, t), t}
+	+ \sum_{t = c}^{m(i) - 1} \mu_{o(i), t}
+	+ \sum_{t = m(i)}^{c + 22} \mu_{d(i), t}
 	+ X_i \gamma
-	+ \epsilon_i
+	+ \epsilon_i.
 \end{equation}
-where $y_i$ is the income rank of individual $i$ at age 28 who moves from $o$ to $d$ in year $m$, and $X_i$ is a vector of covariates (e.g. cohort and parental income, occupation, and labor-force status).%
+Here, $y_i$ is the income rank of individual $i$ at age 28 who moves from $o(i)$ to $d(i)$ in year $m(i)$ and $X_i$ includes characteristics like cohort and parental income, occupation, and labor-force status.%
 \footnote{
 	For identifiability, I also impose a yearly sum-to-zero constraint $\mathbb E(\mu_{zt} \ | \ t) = 0 \; \forall \; t$.}
-Of interest are the parameters $\set{\mu_{zt}}$: the causal effects of spending year $t$ in place $z$.
-
-For OLS to recover these causal parameters, I require that there is no \emph{dynamic} selection into specific origin-destination pairs.\footnote{
+%
+The fixed effects allow for selection into particular origin-destination pairs and for dynamic selection into both the choice to move and the choice of destination.
+However, to identify $\set{\mu_{zt}}$---the causal effects of spending year $t$ in place $z$---I require that there is no \emph{dynamic} selection into particular origin-destination pairs.\footnote{
 	This differs from the classic age-at-move orthogonality assumption because, to identify time-varying effects, I require either variation in time at move within a fixed cohort or variation in cohort within a fixed time-at-move.
-	Within cohort, age at move is colinear with year of move (with likely selection into year of move) and within year of move, age at move is colinear with cohort (with likely selection into cohort).
-	So the age-at-move orthogonality assumption is unrealistic.
-}
-In particular, I allow for dynamic selection into both the choice to move and the choice of destination (by the inclusion of  $\pi_{om}$ and $\rho_{dm}$) and for selection into specific origin-destination pairs ($\alpha_{od}$), but only so long as this origin-destination selection is time-invariant.\note{is this testable?}%
-\footnote{
-	Ideally, one could include an origin-destination-time-of-move fixed effect, but this would be collinear with $\set{\mu_{zt}}$.}
+	Within cohort, age at move is colinear with year of move (with likely selection into year of move) and within year of move, age at move is colinear with cohort (with likely selection on cohort).
+	So the age-at-move orthogonality assumption is unrealistic.}
+% \footnote{
+% 	Including an origin-destination-time-of-move fixed effect would make the model unidentifiable.
+% }
+% I can then use these causal estimates in conjunction with the China Shock instrument in a first-differences regression or an event study to see the effect of import exposure on the quality of a place for children, as measured by its causal effect on adult earnings.
 
-Having produced these yearly causal estimates, I can use them in conjunction with the China Shock instrument in a first-differences regression or an event study to see the causal effect of import exposure on childhood place effects.\footnote{For power, I could also incorporate the event study into \autoref{eq:movers} to estimate everything in a single step.}
-
-Finally, I will examine heterogeneity in these effects at the individual and place level.
-For example, do children of managers and other elites fare better in the aftermath than those whose parents were unskilled workers?
+These time-varying place effects will allow me to identify the effect of the China Shock on average. 
+Next, I will study heterogeneity:
+Are children of managers and other elites affected differently than children of unskilled workers?
 % https://www.nber.org/papers/w33121
-Do leavers fare better than stayers?
-I will also assess the degree to which changes in place effects were driven by compositional changes, for example, if CZs that retained high-income or highly educated residents were less affected or recovered more quickly.
+Do children who leave fare better than those who stay?
+I will also assess the degree to which changes in place effects were driven by compositional changes, for example, if places that retained high-income or highly educated residents were less affected or recovered more quickly.
+(Recent unpublished work by \textcite{card-rothstein-2025-neighborhoods} indicates that composition explains a large part of a place's causal effect, suggesting a peer-effects mechanism at play.)
+% https://www.brookings.edu/wp-content/uploads/2021/09/15985-BPEA-BPEA-FA21_WEB_Autor-et-al_Glaeser-Comment.pdf
 
-Outside this particular project, I am also broadly interested in work at the intersection of economics and theoretical computer science, e.g., algorithmic game theory and how tools from modern cryptography like zero-knowledge-proofs can be used in mechanism design (e.g. \cite{canetti-etal-2025-zk-mechanisms, ferreira-weinberg-2020-crypto-auctions}).
+Finally, this project will serve as a jumping-off point for a broader research agenda about spacial inequality, the places ``left behind'' by globalization, and growing tension in American politics.
+For example, in recent independent work of mine, I develop a measure of public ideological polarization and show that it been steadily increasing over the last several decades (see attached writing sample).
+However, most of this increase has been driven by growing polarization \emph{within} regions of the country and \emph{within} urban and rural areas, not from growing disagreement between places.
+If spatial divides don't explain diverging views, what other factors are at play?
+I hope to continue answering these sorts of questions throughout graduate school and beyond.
 
 \printbibliography
 

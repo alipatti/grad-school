@@ -47,6 +47,7 @@
 \RequirePackage{multicol}
 \let\oldprintbibliography\printbibliography
 \renewcommand{\printbibliography}{
+	\singlespacing
 	\section{References} {$ $}
 
 	\vspace{-1em}
