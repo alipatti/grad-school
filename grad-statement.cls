@@ -8,7 +8,7 @@
 \RequirePackage{geometry}
 \geometry{letterpaper}
 \geometry{margin=1in}
-% \linespread{1.0} % single-spaced
+\linespread{1.5} % single-spaced
 
 % decrease spacing around math
 \AtBeginDocument{
@@ -17,8 +17,6 @@
 	\setlength{\abovedisplayshortskip}{2pt}
 	\setlength{\belowdisplayshortskip}{2pt}
 }
-
-% \everydisplay{\textstyle}
 
 % remove spacing around lists
 \RequirePackage{enumitem}
@@ -32,6 +30,7 @@
 \RequirePackage[
 	backend=biber,
 	giveninits=true,
+	% uniquename=init,
 	doi=false,
 	url=false,
 	isbn=false,

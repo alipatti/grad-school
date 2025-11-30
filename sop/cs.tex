@@ -1,1 +1,95 @@
+\documentclass{grad-statement}
 
+% \addbibresource{refs.bib}
+
+\usepackage{ali-todo}
+\usepackage{xstring}
+
+\newcommand\school{Cornell}
+\newcommand\program{Information Science}
+
+\author{Pattison}
+\title{Statement of Purpose}
+
+% MIT:
+% For this essay, you may include applicable information on any of following:
+%  Your aptitude and motivation for graduate study in your area of specialization, including your preparation for this field of study.
+% * Past experiences through which you developed skills relevant for research (can include major class projects, research, commercial, government, or teaching experiences)
+% * Experiences that shaped your research ambitions.
+% * Your goals after you complete your degree, and how our graduate program will help you achieve your immediate and longer-term future career objectives.
+
+% CORNELL:
+% Please use the Academic Statement of Purpose to describe (within 1000 words) the substantive research questions you are interested in pursuing during your graduate studies, and explain how our program would help you achieve your intellectual goals. Additionally, detail your academic background, intellectual interests, and any training or research experience you have received that you believe has prepared you for our program. Within your statement, please also identify specific faculty members whose research interests align with your own interests
+
+\begin{document}
+
+\noindent
+I am applying to \school\ \program\ in pursuit of becoming a computer science professor conducting policy-relevant research at the intersection of economics, statistics, and computer science.
+
+\section{Background and Prior Research}
+
+I graduated \emph{summa cum laude} from Carleton College with a double major in mathematics and statistics.
+I've had several relevant research experiences.
+
+Starting fall of my junior year, I worked on an applied crypography project with Professor Nicholas Hopper at the Universtiy of Minnesota, developing a method for users of encrypted messaging apps to report abusive or misinformative content while still retaining privacy guarantees.
+Previous research had struck a balance between accountability and privacy by proposing to attach a small token to every message that would allowed a moderator to pinpoint its sender if the message was reported by its recipient.
+I devised a way to democratize this process by requiring consensus among a panel of moderators before the sender's identity was revealed and presented this as preliminary work at one of the field's top conferences.
+
+The following summer, I strengthened my construction by having senders maintain anonymity until their messages were reported many times or by many different people.
+My construction made use of a cryptographic construct known as a zero-knowledge proof---an argument that is utterly convincing yet reveals none of its reasoning.
+I am preparing a manuscript on these results and hope to submit it for publication soon.
+
+At Carleton, I also worked with Professor David Liben-Nowell on a paper studying a novel algorithms problem inspired by clustering survey responses.
+We show that this problem is hard, and that the hardness remains even in very restricted settings.
+I individually contributed the main technical result: a proof that a naïve greedy algorithm achieves an approximation ratio of $0.5$ on a restricted class of problem instances.
+
+I also served as a computational research assistant for an international physics research group and wrote two undergraduate senior theses.
+For my math major, I developed and reproved Dirichlet's unit theorem---a seminal result in algebraic number theory.
+For my statistics major, I modeled sports games as sequences of discrete events to which I then applied deep-learning techniques originally developed for natural language processing.
+I found that these position-aware sequence models provided little benefit over more classic statistical methods, suggesting that ``momentum'' does not play as large role in sports as common wisdom would suggest.
+
+My senior year, I developed an interest in economics after taking an upper-level price-theory class where I was impressed by its ability to describe situations I had though were unnameable to rigorous quantitative study.
+Since graduating, I've worked as a research assistant for Opportunity Insights---a group at Harvard that uses population-level data to study social mobility and its determinants in the United States.
+While not explicitly computer science, my work at OI has helped convince me that the questions that interest me most---for example inequality and growing political polarization---can indeed by studied by rigorous quantitative methods.
+
+\section{Research Interests}
+
+At \school, I hope to continue the interests I've developed in college by pursuing research at the intersection of computer science, statistics, and economics.
+This may take several forms.
+
+The first is algorithms.
+\inlinetodo{what particular algorithms problems? algorithmic fairness?}%
+\IfSubStr{\school}{Cornell}{
+	Cornell has a very strong theory and algorithms group, and there are several faculty in particular with whom this sort of work could be done:
+	Jon Kleinberg's recent work on \XX ties into this agenda.
+	% https://www.cs.cornell.edu/home/kleinber/
+	So does \XX's on \XX.
+}{}
+\IfSubStr{\school}{MIT}{
+	There are several faculty at MIT with whom this sort of work could be done:
+	Sendhil Mullainathan, % https://sendhil.org/research/
+	Manish Raghavan, % https://mraghavan.github.io
+	Lindsay Raymond (incoming 2026). % https://www.lindseyrraymond.com
+}{}
+% NOTE:
+% incentives?
+% mechanism design?
+
+Another area is cryptography.
+\inlinetodo{describe}
+% MIT has a very strong crypto group.
+% Cornell's is okay.
+
+how tools from modern cryptography like zero-knowledge-proofs can be used in mechanism design (e.g. \cite{canetti-etal-2025-zk-mechanisms, ferreira-weinberg-2020-crypto-auctions}).
+
+Finally, I'm interested in studying the growing polarization of the American public.
+\inlinetodo{explain this}
+% Polarization w/ Michael Macy.
+% https://sites.google.com/site/michaelmacy14/
+% https://sites.google.com/mit.edu/bailey-flanigan/home?authuser=0
+
+\medskip
+
+More broadly, I expect my interests to continue evolving over the course of my Ph.D., and I'd benefit from \school's broad strength both within \program\ and beyond in economics, sociology, and political science.
+
+\end{document}
