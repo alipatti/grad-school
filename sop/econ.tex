@@ -48,7 +48,7 @@ It is well known that this ``China Shock'' had long-lasting negative effects on 
 % \footnote{
 % 	``And what are the consequences [for] children who are raised in trade-exposed places?
 % 	More work is needed to understand the long-term and intergenerational consequences of trade adjustment.'' -- \textcite[p. 75]{autor-etal-2025-places-people}}
-Are kids in textile manufacturing towns doing worse off than they were 30 years ago?%
+Are kids in textile manufacturing towns worse off than they were 30 years ago?%
 % \footnote{
 % 	I will use IRS and Census microdata for this project, which I have worked extensively with in my time at OI.
 % }
@@ -65,14 +65,14 @@ Intuitively, places where employment was concentrated in sectors that saw large 
 
 But this alone is insufficient: If high-ability families leave an area when work disappears, then simply comparing the outcomes of children growing up before and after the China Shock will overstate its effect.
 %
-To address this residential selection, I take inspiration from \textcite{chetty-etal-2024-race-trends} and leverage variation in the timing and destinations of moves to separate compositional shifts from changes in places' causal effects.
-
-My goal is to identify yearly causal effects of each commuting zone on children's adult outcomes, which I can then use in an event study or a first-differences regression.%
+To address this residential selection, I take inspiration from \textcite{chetty-etal-2024-race-trends} and leverage variation in the timing and destinations of moves to identify yearly causal effects of each commuting zone on children's adult outcomes. 
+I can then use these on the left-hand-side of an event study or first-differences regression to discern the China Shock's true impact.%
 \footnote{
 	For power, I could also incorporate an event study into \autoref{eq:movers} to estimate everything in a single step.
 }
+
 To illustrate my identification, consider two children born to similar families in Cleveland in 1985, one of whom moves to Minneapolis in 2000 and the other in 2001.
-Then, the difference in their mean outcomes reflects both the causal effect of spending 2000 in Minneapolis rather than Cleveland \emph{and} potential differences in the families that move in different years.
+Then, the difference in their mean outcomes reflects both the causal effect of spending 2000 in Minneapolis rather than Cleveland \emph{and} potential differences between families that move in different years.
 To account for selection into moving, I include yearly ``push'' and ``pull'' factors that allow for time-varying selection into both the choice to move and the choice of destination.
 I package all such comparisons into the following regression estimated on all one-time movers:
 \begin{equation}
@@ -91,8 +91,8 @@ Here, $y_i$ is the income rank of individual $i$ at age 28 who moves from $o(i)$
 \footnote{
 	For identifiability, I also impose a yearly sum-to-zero constraint $\mathbb E(\mu_{zt} \ | \ t) = 0 \; \forall \; t$.}
 %
-The fixed effects allow for selection into particular origin-destination pairs and for dynamic selection into both the choice to move and the choice of destination.
-To identify $\{\mu_{zt}\}$---the causal effects of spending year $t$ in place $z$---I assume that there is no \emph{dynamic} selection into particular origin-destination pairs.\footnote{
+The fixed effects allow for dynamic selection into both the choice to move and the choice of destination, and for selection into particular origin-destination pairs.
+Identifying $\{\mu_{zt}\}$---the causal effects of spending year $t$ in place $z$---requires asusming that this selection on origin-destination pairs is static.\footnote{
 	This differs from the classic age-at-move orthogonality assumption: To identify yearly place effects, my design requires variation in time of move within a cohort \emph{or} in cohort within a fixed time-of-move. 
 	For the first source of variation, age at move coincides with year of move; for the second, with cohort.
 	There's likely selection on both.
