@@ -74,3 +74,4 @@
 
 \fi
 
+\RequirePackage{xstring}

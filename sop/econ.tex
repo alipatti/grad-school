@@ -4,9 +4,7 @@
 
 \usepackage{ali-todo}
 \usepackage{amsmath, amsfonts}
-
 \usepackage{xspace}
-\usepackage{xstring}
 
 \newcommand\program{Berkeley\xspace}
 
@@ -74,9 +72,7 @@ I package all such comparisons into the following regression estimated on all on
 	\label{eq:movers}
 	y_i =
 	\alpha_{o(i),d(i)}
-	% + \underbrace{\pi_{om} + \rho_{dm}}_{\substack{\text{push and pull} \\ \text{factors}}}
 	+ \pi_{o(i),m(i)} + \rho_{d(i),m(i)}
-	% + \sum_{t = c}^{c + 22} \mu_{z(i, t), t}
 	+ \sum_{t = c(i)}^{m(i) - 1} \mu_{o(i), t}
 	+ \sum_{t = m(i)}^{c(i) + 22} \mu_{d(i), t}
 	+ X_i \gamma
