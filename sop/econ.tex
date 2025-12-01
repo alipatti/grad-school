@@ -6,8 +6,7 @@
 \usepackage{amsmath, amsfonts}
 
 \RequirePackage{xspace}
-\newcommand\school{Harvard\xspace}
-\newcommand\program{Economics\xspace}
+\newcommand\school{Yale\xspace}
 
 \author{Pattison}
 \title{Statement of Purpose}
@@ -15,7 +14,7 @@
 \begin{document}
 
 \noindent
-I am applying to \school to become an academic economist in applied microeconomics and political economy.
+I am applying to \school to become an academic economist in applied microeconomics and political economics.
 Broadly, I aim to study	questions about opportunity, spatial inequality, and growing political polarization in the United States.
 
 \section{Background and Prior Research}
@@ -30,14 +29,12 @@ For my statistics major, I modeled basketball games as sequences of discrete eve
 
 During my senior year, I developed an interest in economics after taking an upper-level price theory class where I was impressed by the ability of economic models to describe situations I had thought were not amenable to rigorous study.
 I decided to pursue this interest and, since graduating in June 2024, have worked as a predoctoral fellow at Opportunity Insights (OI) on a project exploring disparities in life expectancy across the U.S.
-I've appreciated how this work---and OI more generally---uses clever economic and computational techniques to bring quantitative clarity to issues that were not previously well understood.
-I hope to continue doing this in my own research.
+I've appreciated how this work---and OI more generally---uses clever economic techniques to bring novel quantitative clarity to publicly relevant issues.
+I hope to continue this in my own research.
 
 \section{Research Interests}
 
 My experience growing up in an urban public school system and my more recent work at OI have made me particularly interested in issues of opportunity and spatial inequality.
-% Why, and to what degree, do some children have better life outcomes than others?\note{better grounding sentence}
-I plan to continue studying this in graduate school.
 
 In particular, I propose to investigate how rising Chinese import competition in the 2000s affected the long-term outcomes of children raised in trade-exposed U.S. communities.
 It is well known that this ``China Shock'' had long-lasting negative effects on exposed adults, but the intergenerational impact is unknown \parencite{autor-etal-2025-places-people}.
@@ -62,15 +59,15 @@ Intuitively, places where employment was concentrated in sectors that saw large 
 But this approach alone is insufficient: If high-ability families are more likely to leave an area when work disappears, then simply comparing outcomes before and after will overstate the China Shock's effect.
 %
 To address this residential selection, I take inspiration from \textcite{chetty-etal-2024-race-trends} and leverage variation in the timing and destination of moves to identify yearly causal effects of each commuting zone on children's outcomes. 
-I can then use these on the left-hand-side of an event study or first-differences regression to discern the China Shock's true impact.%
-\footnote{
-	For power, I could also incorporate an event study into \autoref{eq:movers} to estimate everything in a single step.
-}
+I can then use these on the left-hand-side of an event study or first-differences regression to discern the China Shock's true impact.
 
 To illustrate my identification strategy, consider two children born to similar families in Cleveland in 1985, one of whom moves to Minneapolis in 2000 and the other in 2001.
 Then, the difference in their mean outcomes reflects both the causal effect of spending 2000 in Minneapolis rather than Cleveland \emph{and} potential differences between families that move in different years.
 To account for selection into moving, I include yearly ``push'' and ``pull'' factors that allow for time-varying selection into both the choice to move and the choice of destination.
-I package all such comparisons into the following regression estimated on all one-time movers:
+I package all such comparisons into the following regression estimated on all one-time movers:%
+\footnote{
+	For power, I could also package an event study into \autoref{eq:movers} and estimate everything in a single step.
+}
 \begin{equation}
 	\label{eq:movers}
 	y_i =
@@ -99,7 +96,7 @@ Were children of high-income professionals affected differently than children of
 % https://www.nber.org/papers/w33121
 Did children who left fare better than those who stayed?
 Were places that retained high-income residents less affected or quicker to recover?
-(Recent unpublished work by \textcite{card-rothstein-2025-neighborhoods} indicates that composition explains a large part of a place's causal effect, suggesting a peer-effects mechanism at play.)
+Recent unpublished work by \textcite{card-rothstein-2025-neighborhoods} indicates that composition explains a large part of a place's causal effect, suggesting a peer-effects mechanism at play.
 % https://www.brookings.edu/wp-content/uploads/2021/09/15985-BPEA-BPEA-FA21_WEB_Autor-et-al_Glaeser-Comment.pdf
 
 Finally, this project will serve as a jumping-off point for a broader research agenda about spatial inequality, the places ``left behind'' by globalization, and growing tensions in American politics.
