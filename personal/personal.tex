@@ -1,18 +1,18 @@
-\documentclass[berkeley]{grad-statement}
+\documentclass{grad-statement}
 
 \usepackage{ali-todo}
 
 \title{Personal Statement}
 \author{Pattison}
 
-\newcommand{\version}{long}
+\newcommand{\version}{250} % 250, 300, 1000
 
 \begin{document}
 
 \noindent
 As a teen, I spent five years in an accelerated math program at the University of Minnesota that covered the core of a typical undergraduate math degree.
 Its rigor stood in sharp contrast to the classroom experience at my public high school where two-thirds of students failed to meet state reading standards and three-quarters received federal free or reduced-price lunch.
-I fell in love with math and entered college thinking I'd be a mathematician.
+I \IfStrEq{\version}{250}{}{fell in love with math and }entered college thinking I'd be a mathematician.
 
 But after taking several upper-level math classes, I became disillusioned with the idea of spending my life proving theorems understandable only by a handful of specialists.
 Around the same time, a former high school track teammate was shot to death, and another close high school friend became a teen mother.
@@ -21,19 +21,20 @@ I faced a conundrum:
 Fields I found rigorous studied problems I found unsatisfyingly abstract.
 Fields studying problems that moved me lacked sufficient rigor.
 
-Gradually, I realized that the choice between rigor and relevance was a false dichotomy, and in my senior year, a price theory class opened my eyes to economics as a lens through which to study the inequality so apparent in my public schooling.
+Gradually, I realized the choice between rigor and relevance was a false dichotomy, and in my senior year, a price theory class opened my eyes to economics as a lens through which to study the inequality so apparent in my public schooling.
 At Opportunity Insights, I've had the privilege of tackling issues I find personally meaningful---education, social mobility, health inequality---with the exactness that first drew me to mathematics.
+\IfStrEq{\version}{250}{I hope to continue this throughout my career.}{
 
-My individual work and the research environment have been intellectually challenging (how do we efficiently bootstrap millions of standard errors?) and personally fulfilling (how do we develop policies that enable children to rise from poverty?).
-I hope to continue doing research that checks both these boxes.
+	My individual work and the research environment have been intellectually challenging (how do we efficiently bootstrap millions of standard errors?) and personally fulfilling (how do we develop policies that enable children to rise from poverty?).
+	I hope to continue doing research that checks both these boxes.
+}
 
-\IfStrEq{\version}{short}{}{
+\IfStrEq{\version}{1000}{
 
 	\medskip
 
 	My time at OI has also given me a deeper appreciation for the ingredients that foster this kind of research.
 	There are two that I find particularly important: cohesive teams and good tools.
-	% I'm invested in making sure the people around me have both.
 
 	\section{Teams}
 
@@ -72,6 +73,6 @@ I hope to continue doing research that checks both these boxes.
 
 	Throughout my Ph.D. and beyond, I aim to answer economic questions with the same precision that first drew me to mathematics and computer science.
 	I have strong experience building environments---social and technical---in which this sort of work can be done.
-}
+}{}
 
 \end{document}
